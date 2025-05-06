@@ -6,7 +6,8 @@ my version of the rock paper scissors game
 
 ## 2. todo-app
 
--- my small todo application
---
+- my small todo application
 
-More coming soon
+
+More coming soon 
+--
