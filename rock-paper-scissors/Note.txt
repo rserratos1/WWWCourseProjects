@@ -1,1 +1,0 @@
-I added both the Play Again button and the light/dark theme toggle
