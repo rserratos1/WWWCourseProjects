@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Frijole&family=Joti+One&family=Kirang+Haerang&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #1F2041;
+    --secondary-color: #4B3F72;
+    --third-color: #FFC857;
+    --fourth-color: #119DA4;
+    --fifth-color: #19647E;
+
+    --happy-color: #FFC857;
+    --happy-secondary-color: #fba700;
+    --sad-color: #57cfff;
+    --sad-secondary-color: #00b7ff;
+    --angry-color: #ff5757;
+    --angry-secondary-color: #ff0101;
+    --surprised-color: #ff9d57;
+    --surprised-secondary-color: #fd6b03;
+
+    --text-primary-color: black;
+    --text-secondary-color: white;
+}
+
+*{
+    text-align: center;
+    font-family: "Kirang Haerang", system-ui;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
+    height: 100vh;
+    transition: background-color 3s, ease;
+    color: var(--text-primary-color);
+    box-shadow:inset 0px 0px 20px 5px #1F2041;
+}
+
+.container{
+    height: fit-content;
+    padding: 2rem 0;
+}
+
+h1{
+    background: #000;
+    height: 6rem;
+    color: var(--text-secondary-color);
+    font-size: 48px;
+    align-content: center;
+    border-radius: 10% 20% / 90% 80%;
+    margin: 2rem 4rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Default button style */
+button {
+    width: 11rem;
+    height: 10rem;
+    border-radius: 50% 20% / 10% 40%;
+    border: 0.5rem ridge var(--primary-color); /* Default border */
+    font-size: 2.5rem;
+    box-shadow: inset 0px 0px 20px 1px #1F2041;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 8px 15px 2px #1F2041;
+    transform: scale(1.1);
+    border: none;
+}
+
+/* Active state when the button is clicked */
+button.active {
+    background: black; /* Modify this per mood */
+    box-shadow: 0px 8px 15px 2px #1F2041;
+    transform: scale(1.05); /* Slightly enlarge the button */
+    border: none; /* Remove the border when active */
+}
+
+/* Active effect when the button is pressed */
+button:active {
+    transform: scale(0.95);
+    border:none;
+    height: 15rem;
+}
+
+button.clearButton, button.historyButton{
+    width: 8rem;
+    height: 4rem;
+    border-radius: 4rem;
+    border: none;
+    font-size: 1.5rem;
+    box-shadow:0px 0px 8px 2px var(--secondary-color);
+    transition-timing-function: ease-in-out;
+    margin: 0rem 2rem;
+}
+
+button.clearButton:hover, button.historyButton:hover{
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.happy{
+    background: linear-gradient(var(--happy-color), var(--happy-secondary-color));
+    font-family: "Kirang Haerang", system-ui;
+}
+
+.sad{
+    background: linear-gradient(var(--sad-color), var(--sad-secondary-color));
+    font-family: "Kirang Haerang", system-ui;
+}
+
+.angry{
+    background: linear-gradient(var(--angry-color), var(--angry-secondary-color));
+    font-family: "Kirang Haerang", system-ui;
+}
+
+.surprised{
+    background: linear-gradient(var(--surprised-color), var(--surprised-secondary-color));
+    font-family: "Kirang Haerang", system-ui;
+}
+
+#message{
+    padding: 2rem;
+    font-size: 40px;
+    transition: color 3s ease;
+    height: 4rem;
+}
+
+.happyButton{
+    font-size: 6rem;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic Drawing App</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="drawingBoard">
+
+                <section class="canvasContainer">
+                    <div class="headingBar">
+                        <h1>Draw Something ...</h1>
+                            <button id="clearCanvas" type="clearCanvas">CLEAR</button>
+                    </div>
+    
+                    <canvas id="myCanvas"></canvas>
+                </section>
+
+                <section class="options">
+                    <label class="option">Brush</label>
+                    <ul class="brush">
+                        <li class="option">
+                            <input type="range" id="size-slider" min="1" max="30" value="5">
+                        </li>
+                    </ul>
+
+                    <label class="option">Colors</label>
+                    <div class="colors">
+                        <ul class="colorOptions">
+                            <li class="option" data-color="red"></li>
+                            <li class="option" data-color="orange"></li>
+                            <li class="option" data-color="yellow"></li>
+                            <li class="option" data-color="green"></li>
+                            <li class="option" data-color="blue"></li>
+                            <li class="option" data-color="white"></li>
+                            <li class="option" data-color="black"></li>
+                        </ul>
+                    </div>
+                </section>
+
+                
+            </div>
+            
+            
+
+            <script class="functionality" src="script.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+
+    <title>Registration</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+      
+      :root{
+        --main: #d6d6d6;
+        --main-background: #f3f3f5;
+        --secondary-background: #4000d4;
+      }
+      
+      body{
+        height:0vh;
+        padding: 5px;
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(to right, #00A6A6, #EFCA08);
+        justify-items: center;
+        align-items: center;
+      }
+
+      .container{
+        width: 600px;
+        border-radius: 50px;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+        background-color: var(--main-background);
+        backdrop-filter: blur(100px);
+        padding: 2rem;
+      }
+
+      .form-container{
+        display: grid;
+        grid-template-columns: 100%;
+        border: 0;
+      }
+
+      form fieldset legend{
+        font-size: 50px;
+        padding-bottom: 1rem;
+        text-align: center;
+        font-family: "Pacifico", sans-serif;
+        font-weight: 600;
+        width: 100%;
+        padding: auto;
+      }
+
+      .section1{
+        display: grid;
+        columns: 2;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        place-items: center;
+        row-gap: 2rem;
+      }
+
+      input{
+        border-radius: 2px;
+        border-color: var(--main);
+        padding: 0.5rem;
+        border-style:ridge;
+      }
+
+      input:hover{
+        background-color: var(--secondary-background);
+        color: #fff;
+      }
+
+      label{
+        font-weight: bolder;
+        font-size: large;
+        padding-top: 2rem;
+
+      }
+        
+      .section2{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        padding: 1rem;
+      }
+
+      .section3{
+        padding:1rem;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+      }
+
+      select{
+        padding: 0.5rem;
+        border-radius: 5px;
+        border-color: var(--main);
+      }
+
+      .section4{
+        place-items: center;
+        padding: 1rem 0;
+      }
+
+      #termsBox{
+        height: 4rem;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 0;
+      }
+
+      .terms div{
+        padding: 1rem;
+      }
+
+      #submit{
+        display: flex;
+        width: 25%;
+        border: 0;
+        background-color: var(--main);
+        margin-bottom: 2rem;
+        margin: auto;
+        cursor: pointer;
+      }
+
+      #submit:hover{
+        background-color: var(--secondary-background);
+      }
+
+      .divide{
+        padding: 2rem;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <form method="post" action="process.php">
+        <fieldset class="form-container">
+          <legend>Registration</legend>
+
+          <div class="section1">
+            <div>
+              <div><label>Name:</label></div>
+              <div><input type="text" name="name" placeholder="Full Name" required/></div>          
+            </div>
+            <div>
+              <div><label>Email:</label></div>
+              <div><input type="text" name="name" placeholder="Email" required/></div>
+            </div>
+            <div>
+              <div><label>Username:</label></div>
+            <div><input type="text" name="username" placeholder="Username" required/></div>
+            </div>
+            <div>
+              <div><label>Password:</label></div>
+            <div><input type="text" name="name" placeholder="Password" required/></div>
+            </div>
+          </div>
+
+          <div class="divide"><hr></div>
+
+          <div class="section2">
+            <div><label>Select Gender:</label></div>
+            <div><input type="radio" id="gender" name="gender" value="1"/>Female</div>
+            <div><input type="radio" id="gender" name="gender" value="1"/>Male</div>
+            <div><input type="radio" id="gender" name="gender" value="1"/>Other</div>
+          </div>
+
+          <div class="section3">
+            <label>Country: </label>
+            <select name="choices">
+              <option disabled selected>Choose a Country</option>
+              <option>Canada</option>
+              <option>Mexico</option>
+              <option>United States</option>
+              <option>other</option>
+            </select>
+          </div>
+
+          <div class="divide"><hr></div>
+
+          <div class="section4">
+            <div>
+              <input type="checkbox" name="accept" required/>
+              <label>I accept the Terms & Conditions</label>
+            </div>
+          </div>
+
+          <input id="submit" type="submit" />
+          
+        </fieldset>
+      </form>
+    </div>    
+  </body>
+</html>
