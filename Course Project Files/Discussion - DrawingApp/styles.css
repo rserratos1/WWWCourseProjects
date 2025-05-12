@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Rubik+Dirt&display=swap');
+
+:root{
+    --main-bg-color: #EAF0CE;
+    --secondary-bg-color: #BBBE64;
+    --main-color: #443850;
+    --secondary-color: #7d8491;
+    --third-color: #C0C5C1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: radial-gradient(var(--main-bg-color) 30%, var(--secondary-bg-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.drawingBoard {
+    display: grid;
+    grid: auto-flow / 3fr 80px;
+}
+
+section.options {
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+    border: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+section.canvasContainer {
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.headingBar {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding-bottom: 0.5rem;
+}
+
+h1 {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+#clearCanvas {
+    padding: 1rem;
+}
+
+button {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--secondary-bg-color);
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 16px;
+    height: 80%;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background: var(--main-color);
+}
+
+canvas {
+    background-color: white;
+    margin: auto;
+    border: 12px ridge var(--main-color);
+    border-radius: 2rem;
+    height: 400px;
+    width: 600px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    padding-top: 1rem;
+}
+
+ul.brush {
+    writing-mode: sideways-lr;
+    padding: 0;
+}
+
+li, input {
+    list-style: none;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.colors {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.colorOptions .option {
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.colorOptions .option:nth-child(1) {
+    background-color: red;
+}
+.colorOptions .option:nth-child(2) {
+    background-color: orange;
+}
+.colorOptions .option:nth-child(3) {
+    background-color: yellow;
+}
+.colorOptions .option:nth-child(4) {
+    background-color: green;
+}
+.colorOptions .option:nth-child(5) {
+    background-color: blue;
+}
+.colorOptions .option:nth-child(6) {
+    background-color: #fff;
+}
+.colorOptions .option:nth-child(7) {
+    background-color: #000;
+}
+
+.colorOptions .option.selected {
+    outline: 3px solid #fff;
+    transform: scale(1.2);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+}
+
+.colorOptions .option:first-child:hover::before{
+    border-color: #ccc;
+}

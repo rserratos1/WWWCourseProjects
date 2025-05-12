@@ -1,0 +1,68 @@
+<!-- Raquel Serratos
+ CSC455-01
+ Assignment 3 & 4 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <section>
+      <div class="toggleContainer">
+        <div>
+          <button class="clear" id="clearButton">Play Again</button>
+        </div>
+        <div>
+          <h2>light/dark</h2>
+          <label class="switch">          
+            <input type="checkbox" id="toggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="rock" class="button">Rock</button>
+        <button id="paper" class="button">Paper</button>
+        <button id="scissors" class="button">Scissors</button>
+      </div>
+
+      <div class="result">
+        <div class="currentResults">
+          <div class="userContainer">
+            <h2 class="resultHeader" id="resultHeader">User</h2>
+            <div class="userResult"><span id="user"></span></div>
+          </div>
+          
+          <p> VS </p>
+
+          <div class="computerContainer">
+            <h2 class="resultHeader" id="resultHeader">Computer</h2>
+            <div class="computerResult"><span id="computer"></span></div>
+          </div>
+        </div>
+
+        <div class="outcomeContainer">
+          <p class="outcome"><span id="outcome">-</span></p>
+          <p id="rounds">Round: <span id="rounds-total">0</span></span></p>
+        </div>        
+      </div>
+
+      <div class="scoreboard">
+        <p id="user-label">User Score: <span id="user-score">0</span></p>
+        <p id="computer-label">
+          Computer Score: <span id="computer-score">0</span>
+        </p>
+      </div>
+    </section>
+    <script src="script.js" defer></script>
+  </body>
+</html>
