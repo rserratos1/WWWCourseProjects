@@ -12,7 +12,7 @@ export default function landingPage() {
   <body>
     <main class="flex justify-center  h-screen">
       <div class="flex flex-col w-full md:w-140 xl:w-200 bg-indigo-300 justify-center inset-shadow inset-shadow-indigo-950">
-        TEST
+        Hello, this is Assignment 5! 😊
       </div>
     </main>
   </body>
