@@ -29,7 +29,7 @@ div.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90vw;
+    width: 65vw;
     background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
     color: #fff;
     font-family: 'Playwrite DK Loopet', cursive;
