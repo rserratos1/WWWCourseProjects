@@ -10,8 +10,8 @@ export default function landingPage() {
   </head>
   
   <body>
-    <main class="flex justify-center bg-indigo-300 h-screen">
-      <div class="flex flex-col w-full md:w-140 xl:w-200 bg-white justify-center inset-shadow inset-shadow-indigo-950">
+    <main class="flex justify-center  h-screen">
+      <div class="flex flex-col w-full md:w-140 xl:w-200 bg-indigo-300 justify-center inset-shadow inset-shadow-indigo-950">
         TEST
       </div>
     </main>
