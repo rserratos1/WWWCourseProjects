@@ -1,7 +1,7 @@
 // const BACKGROUNDS = ["ice1.jpeg", "ice2.jpeg", "ice3.jpeg"];
 
 export default function landingPage() {
-  const choice = BACKGROUNDS[Math.floor(Math.random() * BACKGROUNDS.length)];
+  // const choice = BACKGROUNDS[Math.floor(Math.random() * BACKGROUNDS.length)];
   return `<!DOCTYPE html>
 <html lang="en">
   <head>
