@@ -15,7 +15,9 @@ export default function landingPage() {
     <title>MyProjects</title>
   </head>
   
-  <body sytle="background-image: url(${choice});">
+  <body sytle="
+  margin:0;
+  background: url(${choice}) center/cover no-repeat;">
     <img src="/images/penguin.png" class="penguin" alt="Penguin" />
 
     <main>
