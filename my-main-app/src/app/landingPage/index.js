@@ -11,7 +11,7 @@ export default function landingPage() {
   <body>
     <main class="flex justify-center items-center h-screen">
       <div 
-        style="background-color: #f0f0f0" 
+        style="background-color: red" 
         class="flex flex-col items-center justify-center w-full md:w-140 xl:w-200 bg-indigo-300 inset-shadow inset-shadow-indigo-950"
       >
         Hello, this is Assignment 5! 😊
