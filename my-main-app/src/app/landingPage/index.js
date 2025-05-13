@@ -1,4 +1,4 @@
-const BACKGROUNDS = ["ice1.jpeg", "ice2.jpeg", "ice3.jpeg"];
+// const BACKGROUNDS = ["ice1.jpeg", "ice2.jpeg", "ice3.jpeg"];
 
 export default function landingPage() {
   const choice = BACKGROUNDS[Math.floor(Math.random() * BACKGROUNDS.length)];
@@ -12,10 +12,10 @@ export default function landingPage() {
   </head>
   
   <body
-  style="
-      margin:0;
-      background: url('/images/${choice}') center/cover no-repeat;
-    ">
+  // style="
+  //     margin:0;
+  //     background: url('/images/${choice}') center/cover no-repeat;
+  //   ">
     <img src="/images/penguin.png" class="penguin" alt="Penguin" />
 
     <main>
