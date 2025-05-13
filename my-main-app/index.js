@@ -1,5 +1,5 @@
 import express from "express";
-import landingPage from "./src/app/landingPage/index.js";
+import landingPage from "./src/app/landingPage";
 
 // // my-main-app/index.js
 // const express = require("express");
