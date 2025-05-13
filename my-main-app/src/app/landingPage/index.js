@@ -15,7 +15,7 @@ export default function landingPage() {
     <main class="flex justify-center items-center h-screen">
       <div 
         style="background-color: #4f46e5; color: #fff; text-align: center; font-family:'Playwrite DK Loopet', cursive; font-size: 20px; padding: 20px; border-radius: 10px;" 
-        class="flex flex-col items-center justify-center w-full md:w-140 xl:w-200 bg-indigo-300 inset-shadow inset-shadow-indigo-950"
+        class="flex flex-col items-center justify-center w-full md:w-140 xl:w-200 "
       >
         Hello, this is Assignment 5! 😊
       </div>
