@@ -1,4 +1,3 @@
-// src/app/landingPage/index.js
 export default function landingPage() {
   return `<!DOCTYPE html>
 <html lang="en">
@@ -10,8 +9,11 @@ export default function landingPage() {
   </head>
   
   <body>
-    <main class="flex justify-center  h-screen">
-      <div class="flex flex-col w-full md:w-140 xl:w-200 bg-indigo-300 justify-center inset-shadow inset-shadow-indigo-950">
+    <main class="flex justify-center items-center h-screen">
+      <div 
+        style="background-color: #f0f0f0" 
+        class="flex flex-col items-center justify-center w-full md:w-140 xl:w-200 bg-indigo-300 inset-shadow inset-shadow-indigo-950"
+      >
         Hello, this is Assignment 5! 😊
       </div>
     </main>
