@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/app/landingPage/**/*.js",
+    "./index.js",
     "./src/**/*.{js,html}",
     "./public/**/*.html",
   ],
