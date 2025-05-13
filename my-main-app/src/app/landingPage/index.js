@@ -9,7 +9,9 @@ export default function landingPage() {
   </head>
   
   <body>
-    <main >
+    <img src="/images/penguin.png" class="penguin" alt="Penguin" />
+
+    <main>
       <div class="container">
         Hello, this is Assignment 5! 😊
       </div>
