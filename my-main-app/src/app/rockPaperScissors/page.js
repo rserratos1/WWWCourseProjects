@@ -11,7 +11,7 @@ export default function RockPaperScissorsPage() {
   useRPS();
   return (
     <main>
-      <header>
+      <header id="rps-header">
         <h1>Rock Paper Scissors</h1>
       </header>
 
@@ -69,6 +69,7 @@ export default function RockPaperScissorsPage() {
             </p>
           </div>
         </div>
+
         <div className="scoreboard">
           <p id="user-label">
             User Score: <span id="user-score">0</span>
