@@ -1,3 +1,4 @@
 {
+  "/page": "app/page.js",
   "/rockPaperScissors/page": "app/rockPaperScissors/page.js"
 }
