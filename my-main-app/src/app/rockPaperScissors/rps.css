@@ -12,6 +12,9 @@
   --fifth-color: #2f2235;
 
   --header-background: white;
+
+  --body-font: "Atma", system-ui;
+  --header-font:"Londrina Shadow", sans-serif;
 }
 
 .darkMode {
@@ -33,7 +36,7 @@
   box-sizing: border-box;
 }
 
-body {
+main {
   display: grid;
   background: radial-gradient(
     circle,
@@ -41,20 +44,23 @@ body {
     var(--fifth-color) 100%
   );
   text-align: center;
-  font-family: "Atma", system-ui;
 }
 
-header {
+main header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   background-color: var(--header-background);
-  color: var(--secondary-text-color);
-  font-family: "Londrina Shadow", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
-  font-style: normal;
+}
 
-  padding-top: 4rem;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+header h1{
+  font-size: 4rem;
+  font-weight: 100;
+  font-style: normal;
+  color: var(--secondary-text-color);
+  font-family: var(--header-font);
 }
 
 section {
@@ -62,10 +68,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--main-text-color)
+  color: var(--main-text-color);
+  font-family: "Atma", system-ui;
 }
 
-div.toggleContainer {
+.toggleContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,7 +199,7 @@ div.scoreboard {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  width: 99%;
+  width: 100vw;
   background: #2f2235;
   background: linear-gradient(
     90deg,
