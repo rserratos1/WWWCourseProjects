@@ -3,16 +3,12 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <ul className="flex space-x-4">
+        <ul>
           <li>
-            <a href="/" className="text-blue-500 hover:none">
-              Home
-            </a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="/rockPaperScissors" className="text-blue-500 hover:none">
-              Rock Paper Scissors
-            </a>
+            <a href="/rockPaperScissors">Rock Paper Scissors</a>
           </li>
         </ul>
       </nav>
