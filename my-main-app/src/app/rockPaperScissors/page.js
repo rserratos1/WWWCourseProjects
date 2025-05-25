@@ -3,10 +3,6 @@
 import useRPS from "../../lib/useRPS";
 import "./rps.css";
 
-// export const metadata = {
-//   title: "Rock Paper Scissors",
-// };
-
 export default function RockPaperScissorsPage() {
   useRPS();
   return (
