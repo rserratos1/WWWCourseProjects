@@ -18,7 +18,7 @@ export default function LandingPage() {
         <div className="flex-1">
           <h2>Todo List</h2>
           <p>A basic Todo List application to manage your tasks.</p>
-          <a href="/todoList">View Todo List</a>
+          <a href="/">Coming Soon</a>
         </div>
       </section>
     </main>
