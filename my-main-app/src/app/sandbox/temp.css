@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Londrina+Shadow&family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+:root {
+  --main-text-color: white;
+  --secondary-text-color: white;
+
+  --main-color: #fff;
+  /* --secondary-color: #08abc0; */
+  --third-color: #302b63;
+  --fourth-color: #24243e;
+  --fifth-color: #0f0c29;
+
+  --header-background: #0f0c29;
+
+  --sb-color: #414345;
+  --sb-dark-color: #232526;
+
+  --body-font: "Atma", system-ui;
+  --header-font:"Londrina Shadow", sans-serif;
+
+  --dark-header-background: #8d77ab;
+  --dark-primary-background: #393540;
+  --dark-secondary-background: #23202a;
+  --dark-primary-text: #f2efeb;
+  --dark-secondary-text: #f2efeb;
+  --dark-primary-button: #735e90;
+  --dark-secondary-button: #8d77ab;
+  --dark-accent: #aed4da;
+
+  --light-header-background: #393540;
+  --light-primary-background: #aed4da;
+  --light-secondary-background: #f2efeb;
+  --light-primary-text: #f2efeb;
+  --light-secondary-text: #393540;
+  --light-primary-button: #a891c6;
+  --light-secondary-button: #393540;
+  --light-accent: #1b988b;
+
+}      
+
+.darkMode {
+  --main-text-color: white;
+  --secondary-text-color: black;
+  
+  --fifth-color: #845ec2 ;
+  --fourth-color: #845ec2;
+  --third-color: #c4f3fb;
+  --main-color: #c4f3fb;
+
+  --header-background: #fff;
+  
+  --sb-color: #845ec2;
+  --sb-dark-color: #845ec2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    justify-content: start;
+    background-image: none;
+    background-color: var(--dark-secondary-background);
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    text-align: center;
+    width: 100%;
+}
+
+.gameHeader{
+    background-color: var(--dark-header-background);
+    color: var(--dark-primary-text);
+}
+
+.game-section {
+    background-color: var(--dark-primary-background);
+    color: var(--dark-primary-text);
+}
+
+.game-section-top, .game-section-headers, .results, .scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.game-section-top {
+    padding-top: 0;
+}
+
+.outcomeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.under-section {
+    color: var(--dark-secondary-text);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    font: bold 1rem "Atma", system-ui;
+}
+
+.startover {
+    background-color: var(--dark-primary-button);
+    color: var(--dark-primary-text);
+    top: -2rem;
+    position: relative;
+}
+
+.gameButton {
+    background-color: var(--dark-primary-button);
+    color: var(--dark-primary-text);
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity: 1;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
