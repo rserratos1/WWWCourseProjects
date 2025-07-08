@@ -76,6 +76,7 @@ main {
 .gameHeader{
     background-color: var(--dark-header-background);
     color: var(--dark-primary-text);
+    padding-bottom: 1rem;
 }
 
 .game-section {
@@ -95,12 +96,34 @@ main {
     padding-top: 0;
 }
 
-.outcomeContainer {
+.gameOutcomeContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+#gameOutcome {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.playAgainDirections{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark-header-background);
+}
+
+.userHighlight, .compHighlight {
+    border-radius: 1.5rem;
+    box-shadow: none;
+}
+
+#userEmoji, #computerEmoji {
+    font-size: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: inset 0rem 0rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .under-section {
@@ -113,6 +136,7 @@ button {
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     font: bold 1rem "Atma", system-ui;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .startover {
@@ -126,10 +150,29 @@ button {
     background-color: var(--dark-primary-button);
     color: var(--dark-primary-text);
     opacity: 0.8;
+    box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
     opacity: 1;
     transition: all 0.3s ease;
     transform: scale(1.05);
+    box-shadow: none;
+    background-color: var(--dark-secondary-button);
+}
+
+button:active {
+    transition: all 0.13s ease;
+}
+
+@media (min-width: 768px) {
+
+    .gameContainer {
+        width: 900px;
+    }
+
+    #userEmoji, #computerEmoji {
+        font-size: 4rem;
+    }
+    
 }
