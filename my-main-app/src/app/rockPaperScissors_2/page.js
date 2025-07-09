@@ -1,9 +1,9 @@
 "use client";
 
-import useRPS from "../../lib/useTemp";
+import useRPS from "../../lib/useRPS2";
 import "./temp.css";
 
-export default function SandboxPage() {
+export default function RPS2() {
   useRPS();
   return (
     <div className="gameContainer">
@@ -18,8 +18,8 @@ export default function SandboxPage() {
           </button>
           <div className="roundTotal">
             <p>
-              Round:
-              <span id="rounds-total">0</span>
+              Round:&nbsp;
+              <span id="totalRounds">0</span>
             </p>
           </div>
         </div>
@@ -31,18 +31,20 @@ export default function SandboxPage() {
 
         <div className="results">
           <div className="userResult">
-            🌻
-            <span id="userEmoji" />
+            <div id="userHighlight" className="userHighlight">
+              <span id="userEmoji">❔</span>
+            </div>
           </div>
           <div className="computerResult">
-            🌻
-            <span id="computerEmoji" />
+            <div id="compHighlight" className="compHighlight">
+              <span id="computerEmoji">❔</span>
+            </div>
           </div>
         </div>
 
-        <div className="outcomeContainer">
+        <div className="gameOutcomeContainer">
           <div>
-            <span id="outcome">Win or Loose?</span>
+            <span id="gameOutcome">Win or Loose?</span>
           </div>
           <p className="playAgainDirections">
             Select Another Button to Try Again
@@ -63,9 +65,9 @@ export default function SandboxPage() {
 
       <section className="under-section">
         <div className="scoreboard">
-          <p className="playerScore">#</p>
+          <span id="playerScore">0</span>
           <p>Score</p>
-          <p className="CompScore">#</p>
+          <span id="CompScore">0</span>
         </div>
       </section>
     </div>

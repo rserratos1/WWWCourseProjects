@@ -12,7 +12,7 @@ export default function LandingPage() {
           <p>
             A simple game of Rock Paper Scissors built with React and Next.js.
           </p>
-          <a href="/rockPaperScissors">Play Now</a>
+          <a href="/rockPaperScissors_2">Play Now</a>
         </div>
 
         <div className="flex-1">
