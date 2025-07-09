@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-export default function useTemp() {
+export default function useRPS2() {
   useEffect(() => {
     let userScore = 0;
     let computerScore = 0;

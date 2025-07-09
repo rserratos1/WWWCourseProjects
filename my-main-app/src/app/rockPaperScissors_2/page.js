@@ -1,9 +1,9 @@
 "use client";
 
-import useRPS from "../../lib/useTemp";
+import useRPS from "../../lib/useRPS2";
 import "./temp.css";
 
-export default function SandboxPage() {
+export default function RPS2() {
   useRPS();
   return (
     <div className="gameContainer">
