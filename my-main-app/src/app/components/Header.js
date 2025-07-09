@@ -1,10 +1,15 @@
 // src/app/components/Header.js
+import "./header.css";
+
 export default function Header() {
   return (
     <header>
-      <nav>
-        <h1>The Work of Raquel Serratos</h1>
+      <nav className="header-nav">
+        <h1 className="header-title">
+          <a href="/">The Work of Raquel Serratos</a>
+        </h1>
         <ul>
+          {/* todo: hide the hoome when on the home page */}
           <li>
             <a href="/">Home</a>
           </li>
