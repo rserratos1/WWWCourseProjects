@@ -9,10 +9,6 @@ export default function Header() {
           <a href="/">The Work of Raquel Serratos</a>
         </h1>
         <ul>
-          {/* todo: hide the hoome when on the home page */}
-          <li>
-            <a href="/">Home</a>
-          </li>
           <li>
             <a href="/rockPaperScissors_2">Rock Paper Scissors</a>
           </li>

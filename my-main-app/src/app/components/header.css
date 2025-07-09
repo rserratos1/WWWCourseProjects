@@ -1,7 +1,9 @@
 .header-nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.5rem;
 }
 
 .header-title {
@@ -16,4 +18,25 @@
   transition: color 0.3s ease;
   font: bold;
   background-color: white;
+}
+
+@media (min-width: 600px) {
+  .header-nav {
+    flex-direction: row;
+    align-items: center;
+    font: 1.5rem;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  h1.header-nav {
+    border-bottom: #4e4376 1px solid;
+  }
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
 }
