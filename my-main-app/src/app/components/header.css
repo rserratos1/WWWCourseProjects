@@ -20,11 +20,18 @@
   font: bold;
   background-color: white;
   padding-bottom: 0.85rem;
-  border-bottom: orange 1rem solid;
+  border-bottom: orange 0.75rem solid;
 }
 
 .menu-icon {
   width: 1.5rem;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+  transition: transform 0.2s;
+  transform: scale(1.1);
+  color: orange;
 }
 
 nav ul {
