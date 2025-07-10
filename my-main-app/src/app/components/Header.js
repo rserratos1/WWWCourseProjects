@@ -8,6 +8,9 @@ export default function Header() {
         <h1 className="header-title">
           <a href="/">The Work of Raquel Serratos</a>
         </h1>
+        <div>
+          <img className="menu-icon" src="\images\menu.png" alt="Menu Icon" />
+        </div>
         <ul>
           <li>
             <a href="/rockPaperScissors_2">Rock Paper Scissors</a>
