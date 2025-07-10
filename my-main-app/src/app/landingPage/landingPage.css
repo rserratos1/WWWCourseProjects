@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Comforter&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Londrina+Shadow&family=Londrina+Solid:wght@100;300;400;900&family=Metamorphous&family=Updock&display=swap');
+
+
+:root {
+    --primary-color: #2b5876;
+    --secondary-color: #4e4376;
+
+    --body-font: "Atma", system-ui;
+    --header-font: "Londrina Shadow", sans-serif;
+    --third-font: "Josefin Sans", sans-serif;
+    --fourth-font: "Metamorphous", sans-serif;
+    --fifth-font: "Updock", sans-serif;
+    --sixth-font: "Comforter", cursive;
+}
+
+main {
+    justify-content: start;
+    text-align: center;
+    font-family: var(--third-font);
+    background: #FFF;
+    background: linear-gradient(178deg,
+        rgba(255, 255, 255, 1) 25%,
+        rgba(43, 88, 118, 1) 26%, 
+        rgba(78, 67, 118, 1) 100%);
+}
+
+.landingPage-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--primary-color); */
+    
+    width: 100%;
+    opacity: 0.8;
+}
+
+.landingPage-header h1 {
+    opacity: 2;
+    font-family: var(--sixth-font);
+    font-size: 5rem;
+    padding: 4rem 0 1rem 0;
+    margin: 0;
+    color: var(--primary-color);
+}
+
 div {
     color: white;
 }
@@ -10,4 +55,19 @@ section a {
     padding: 1rem 2rem;
     background-color: #2b5876;
     border-radius: 10px;
+}
+
+@media (max-width: 565px) {
+    .landingPage-header h1 {
+        font-size: 2rem;
+        padding: 2rem 0 1rem 0;
+    }
+
+    main {
+        background: #FFF;
+    background: linear-gradient(178deg,
+        rgba(255, 255, 255, 1) 10%,
+        rgba(43, 88, 118, 1) 11%, 
+        rgba(78, 67, 118, 1) 100%);
+    }
 }
