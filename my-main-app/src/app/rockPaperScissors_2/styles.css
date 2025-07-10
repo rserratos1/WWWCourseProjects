@@ -73,10 +73,11 @@ main {
     width: 100%;
 }
 
-.gameHeader{
+.gameHeader-background {
     background-color: var(--dark-header-background);
     color: var(--dark-primary-text);
     padding-bottom: 1rem;
+    width: 100%;
 }
 
 .game-section {
@@ -167,8 +168,9 @@ button:active {
 
 @media (min-width: 768px) {
 
-    .gameContainer {
-        width: 900px;
+    .gameHeader, .game-section-top, .game-section-headers, .results, .gameOutcomeContainer, .scoreboard {
+        width: 700px;
+        margin: 0 auto;
     }
 
     #userEmoji, #computerEmoji {

@@ -79,7 +79,7 @@ export default function useRPS2() {
       compScore.innerHTML = computerScore;
 
       // update the computer highlight
-      computerHighlight.style.boxShadow = greenHighlight;
+      computerHighlight.style.boxShadow = redHighlight;
       userHighlight.style.boxShadow = "none";
 
       // update the outccome readout

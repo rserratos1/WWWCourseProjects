@@ -1,14 +1,16 @@
 "use client";
 
 import useRPS from "../../lib/useRPS2";
-import "./temp.css";
+import "./styles.css";
 
 export default function RPS2() {
   useRPS();
   return (
     <div className="gameContainer">
-      <section className="gameHeader">
-        <h1>Sandbox</h1>
+      <section className="gameHeader-background">
+        <div className="gameHeader">
+          <h1>Sandbox</h1>
+        </div>
       </section>
 
       <section className="game-section">
