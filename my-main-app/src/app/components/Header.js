@@ -6,7 +6,7 @@ export default function Header() {
     <header>
       <nav className="header-nav">
         <h1 className="header-title">
-          <a href="/">The Work of Raquel Serratos</a>
+          <a href="/">Work of Raquel Serratos</a>
         </h1>
         <div>
           <img className="menu-icon" src="\images\menu.png" alt="Menu Icon" />
