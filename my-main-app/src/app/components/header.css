@@ -34,8 +34,42 @@
   color: orange;
 }
 
+nav {
+  display: flex;
+  justify-content: right;
+}
+
+nav ul,
+nav li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+
 nav ul {
+  margin: 0;
+  padding: 0;
   display: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4e4376;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 1rem 2rem;
+}
+
+nav a:hover {
+  transition: transform 0.3s ease;
+  background-color: #4e4376;
+  color: white;
+}
+
+nav a:active {
+  color: #2b5876;
+  transition: 3s ease;
 }
 
 /* display is larger than cell phone */
