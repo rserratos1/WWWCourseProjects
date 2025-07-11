@@ -29,12 +29,12 @@ export default function LandingPage() {
       <section className="resume-section">
         <h2>Resume</h2>
         <p>
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://drive.google.com/open?id=1jE0qOClBzD2ukse53RkKoletbR9AsBqP&usp=drive_fs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             View Resume
-          </a>
-          &nbsp;|&nbsp;
-          <a href="/" target="_blank" rel="noopener noreferrer">
-            Print Resume
           </a>
         </p>
       </section>
@@ -47,13 +47,17 @@ export default function LandingPage() {
             <p>
               A simple game of Rock Paper Scissors built with React and Next.js.
             </p>
-            <a href="/rockPaperScissors_2">Play Now</a>
+            <a href="/rockPaperScissors_2">
+              <button className="PlayNow" id="playNowButton">
+                Play Now
+              </button>
+            </a>
           </div>
 
           <div className="todo-list">
             <h3>Todo List</h3>
             <p>A basic Todo List application to manage your tasks.</p>
-            <a href="/">Coming Soon</a>
+            <p>Coming Soon</p>
           </div>
         </div>
       </section>
