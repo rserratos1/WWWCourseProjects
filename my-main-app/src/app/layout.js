@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import "./styles/landing.css";
+import "./styles/global.css";
 // src/app/layout.js
 export default function RootLayout({ children }) {
   return (
