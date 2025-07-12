@@ -1,5 +1,9 @@
 @import url('../styles/global.css');
 
+body {
+    font-family: var(--body-font);
+}
+
 .landingPage {
     text-align: center;
     background: #FFF;

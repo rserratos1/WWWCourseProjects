@@ -1,3 +1,9 @@
+@import url('../styles/global.css');
+
+.navigationBar {
+  font-family: var(--body-font);
+}
+
 .header-nav {
   display: flex;
   /* flex-direction: column; */
@@ -12,6 +18,7 @@
   padding: 0.5rem 1rem;
   color: #4e4376;
   font-size: 1.1rem;
+  font-family: var(--body-font);
 }
 
 .header-title a:hover {
