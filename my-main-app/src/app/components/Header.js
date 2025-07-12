@@ -3,14 +3,14 @@ import "./header.css";
 
 export default function Header() {
   return (
-    <header>
+    <header className="navigationBar">
       <nav className="header-nav">
         <h1 className="header-title">
           <a href="/">Work of Raquel Serratos</a>
         </h1>
-        <div>
+        <button>
           <img className="menu-icon" src="\images\menu.png" alt="Menu Icon" />
-        </div>
+        </button>
         <ul>
           <li>
             <a href="/rockPaperScissors_2">Rock Paper Scissors</a>

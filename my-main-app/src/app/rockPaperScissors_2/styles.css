@@ -1,4 +1,4 @@
-
+/* @import url('../styles/global.css'); */
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Londrina+Shadow&family=Londrina+Solid:wght@100;300;400;900&display=swap');
 
 :root {
@@ -16,7 +16,7 @@
   --sb-color: #414345;
   --sb-dark-color: #232526;
 
-  --body-font: "Atma", system-ui;
+  --game-body-font: "Atma", system-ui;
   --header-font:"Londrina Shadow", sans-serif;
 
   --dark-header-background: #8d77ab;
@@ -59,11 +59,9 @@
     padding: 0;
 }
 
-main {
-    justify-content: start;
-    background-image: none;
+/* main {
     background-color: var(--dark-secondary-background);
-}
+} */
 
 .gameContainer {
     display: flex;
@@ -71,6 +69,9 @@ main {
     justify-items: flex-start;
     text-align: center;
     width: 100%;
+    font-family: var(--game-body-font);
+    background-color: var(--dark-secondary-background);
+    height: 100vh;
 }
 
 .gameHeader-background {
