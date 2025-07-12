@@ -30,7 +30,7 @@
 
 .header-title a:hover {
   color: var(--primary-color);
-  font-family: var(--header-font);
+  font-style: italic;
   transition: color 0.10s ease;
   font: bold;
   padding-bottom: 0.85rem;
@@ -80,10 +80,10 @@ nav ul {
   color: white;
 }
 
-.gameButton:active {
+/* .gameButton:active {
   color: #2b5876;
   transition: 3s ease;
-}
+} */
 
 /* display is larger than cell phone */
 @media (min-width: 600px) {
@@ -95,10 +95,6 @@ nav ul {
 
   .header-title {
     font-size: 1.2rem;
-  }
-
-  h1.header-nav {
-    border-bottom: #4e4376 1px solid;
   }
 
   .menuButton {
