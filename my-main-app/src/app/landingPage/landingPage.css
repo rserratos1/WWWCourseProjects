@@ -39,7 +39,7 @@ body {
 
 .about-section h2,
 .about-section p {
-    width: 700px;
+    max-width: 700px;
 }
 
 .resume-section {
