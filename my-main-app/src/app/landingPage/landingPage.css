@@ -84,7 +84,7 @@ body {
     padding: 1rem;
     margin: 1rem;
     border-radius: 10px;
-    width: 300px;
+    max-width: 300px;
     color: var(--primary-color);
 }
 
@@ -112,20 +112,6 @@ body {
     transition: 0.10s ease;
 }
 
-/* div {
-    color: white;
-}
-
-section a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    padding: 1rem 2rem;
-    background-color: #2b5876;
-    border-radius: 10px;
-} */
-
 @media (max-width: 565px) {
     .landingPage-header h1 {
         font-size: 2rem;
@@ -139,4 +125,15 @@ section a {
                 rgba(43, 88, 118, 1) 11%,
                 rgba(78, 67, 118, 1) 100%);
     }
+
+    .game-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .RPS, .todo-list {
+        max-width: 300px;
+    }
+
+
 }
