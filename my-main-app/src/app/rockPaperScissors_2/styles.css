@@ -80,6 +80,10 @@
     width: 100%;
 }
 
+.gameHeader h1 {
+    padding: 1rem 0 1.5rem 0;
+}
+
 .game-section {
     background-color: var(--dark-primary-background);
     color: var(--dark-primary-text);
