@@ -8,12 +8,14 @@ export default function Header() {
         <h1 className="header-title">
           <a href="/">Work of Raquel Serratos</a>
         </h1>
-        <button>
+        <button className="menuButton">
           <img className="menu-icon" src="\images\menu.png" alt="Menu Icon" />
         </button>
         <ul>
           <li>
-            <a href="/rockPaperScissors_2">Rock Paper Scissors</a>
+            <a className="gameButton" href="/rockPaperScissors_2">
+              Rock Paper Scissors
+            </a>
           </li>
         </ul>
       </nav>

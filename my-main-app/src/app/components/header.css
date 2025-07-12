@@ -6,7 +6,6 @@
 
 .header-nav {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
@@ -14,20 +13,27 @@
 }
 
 .header-title {
+  color: var(--secondary-color);
+}
+
+.header-title {
   margin: 0;
   padding: 0.5rem 1rem;
-  color: #4e4376;
+  color: var(--secondary-color);
   font-size: 1.1rem;
   font-family: var(--body-font);
 }
 
+.header-title a {
+  text-decoration: none;
+}
+
 .header-title a:hover {
-  color: orange;
+  color: var(--primary-color);
+  font-family: var(--header-font);
   transition: color 0.10s ease;
   font: bold;
-  background-color: white;
   padding-bottom: 0.85rem;
-  border-bottom: orange 0.75rem solid;
 }
 
 .menu-icon {
@@ -38,7 +44,7 @@
   cursor: pointer;
   transition: transform 0.2s;
   transform: scale(1.1);
-  color: orange;
+  color: var(--secondary-color);
 }
 
 nav {
@@ -60,7 +66,7 @@ nav ul {
   display: none;
 }
 
-nav a {
+.gameButton {
   text-decoration: none;
   color: #4e4376;
   font-weight: bold;
@@ -68,13 +74,13 @@ nav a {
   padding: 1rem 2rem;
 }
 
-nav a:hover {
+.gameButton:hover {
   transition: transform 0.3s ease;
   background-color: #4e4376;
   color: white;
 }
 
-nav a:active {
+.gameButton:active {
   color: #2b5876;
   transition: 3s ease;
 }
@@ -95,6 +101,10 @@ nav a:active {
     border-bottom: #4e4376 1px solid;
   }
 
+  .menuButton {
+    display: none;
+  }
+
   .menu-icon {
     display: none;
   }
@@ -103,5 +113,5 @@ nav a:active {
     display: flex;
     flex-direction: row;
     align-items: center;
-  } 
+  }
 }
