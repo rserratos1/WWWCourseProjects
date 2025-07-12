@@ -17,7 +17,6 @@
   --sb-dark-color: #232526;
 
   --game-body-font: "Atma", system-ui;
-  --header-font:"Londrina Shadow", sans-serif;
 
   --dark-header-background: #8d77ab;
   --dark-primary-background: #393540;
@@ -79,6 +78,10 @@
     color: var(--dark-primary-text);
     padding-bottom: 1rem;
     width: 100%;
+}
+
+.gameHeader h1 {
+    padding: 1rem 0 1.5rem 0;
 }
 
 .game-section {

@@ -9,7 +9,7 @@ export default function RPS2() {
     <div className="gameContainer">
       <section className="gameHeader-background">
         <div className="gameHeader">
-          <h1>Sandbox</h1>
+          <h1>Rock Paper Scissors</h1>
         </div>
       </section>
 
