@@ -32,6 +32,18 @@ export default function useRPS2() {
     const choices = ["r", "p", "s"];
     const emojis = ["🪨", "💸", "✂️"];
 
+    // toggle
+    let darkMode = localStorage.getItem("darkMode");
+    const toggleButton = document.getElementById("toggle");
+    const enableDarkmode = () => {
+      document.body.classList.add("darkMode");
+      localStorage.setItem("darkMode", "active");
+    };
+    const disableDarkmode = () => {
+      document.body.classList.remove("darkMode");
+      localStorage.setItem("darkMode", null);
+    };
+
     function game(userChoice) {
       // randomly select a computer choice
       const computerChoice = choices[Math.floor(Math.random() * 3)];
@@ -116,6 +128,13 @@ export default function useRPS2() {
     }
 
     function main() {
+      if (darkMode === "active") enableDarkmode();
+
+      toggleButton.addEventListener("click", () => {
+        darkMode = localStorage.getItem("darkMode");
+        darkMode !== "active" ? enableDarkmode() : disableDarkmode();
+      });
+
       userHighlight.style.boxShadow = "none";
       computerHighlight.style.boxShadow = "none";
 

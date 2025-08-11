@@ -10,6 +10,13 @@ export default function RPS2() {
       <section className="gameHeader-background">
         <div className="gameHeader">
           <h1>Rock Paper Scissors</h1>
+          <div className="toggleContainer">
+            <h2>light/dark</h2>
+            <label className="switch">
+              <input type="checkbox" id="toggle" />
+              <span className="slider round" />
+            </label>
+          </div>
         </div>
       </section>
 

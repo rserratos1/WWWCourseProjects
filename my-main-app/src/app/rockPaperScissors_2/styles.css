@@ -39,18 +39,14 @@
 }      
 
 .darkMode {
-  --main-text-color: white;
-  --secondary-text-color: black;
-  
-  --fifth-color: #845ec2 ;
-  --fourth-color: #845ec2;
-  --third-color: #c4f3fb;
-  --main-color: #c4f3fb;
-
-  --header-background: #fff;
-  
-  --sb-color: #845ec2;
-  --sb-dark-color: #845ec2;
+  --dark-header-background: #8d77ab;
+  --dark-primary-background: #393540;
+  --dark-secondary-background: #23202a;
+  --dark-primary-text: #f2efeb;
+  --dark-secondary-text: #f2efeb;
+  --dark-primary-button: #735e90;
+  --dark-secondary-button: #8d77ab;
+  --dark-accent: #aed4da;
 }
 
 * {
@@ -80,8 +76,67 @@
     width: 100%;
 }
 
+.gameHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: end;
+    width: 100%;
+}
+
 .gameHeader h1 {
     padding: 1rem 0 1.5rem 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2f2235;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2f2235;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 .game-section {
