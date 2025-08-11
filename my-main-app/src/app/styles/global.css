@@ -41,7 +41,7 @@ main {
   flex-direction: column;
   position: relative;
   z-index: 1;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
