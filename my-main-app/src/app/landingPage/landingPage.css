@@ -5,8 +5,8 @@ body {
 }
 
 .landingPage {
-    text-align: center;
-    background: #FFF;
+    background: var(--background);
+    /* background: #FFF; */
     width: 100%;
     color: #ffffff;
 }
@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
 }
 
 .landingPage-header h1 {
@@ -22,7 +23,7 @@ body {
     font-size: 5rem;
     padding: 4rem 0 1rem 0;
     margin: 0;
-    color: var(--primary-color);
+    color: var(--third-color);
 }
 
 .about-section {
@@ -30,11 +31,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to top,
+    background: var(--third-color);
+    color: var(--secondary-color);
+    /* background: linear-gradient(to top,
             rgba(78, 67, 118, 1) 20%,
-            rgba(43, 88, 118, 1) 80%);
-    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
-    padding: 0.5rem;
+            rgba(43, 88, 118, 1) 80%); */
+    /* box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5); */
+    padding: 2rem;
     margin: 0 auto;
 }
 
@@ -59,10 +62,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    box-shadow:inset 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
-    padding: 0.5rem;
+    /* box-shadow:inset 0rem 1rem 2rem rgba(0, 0, 0, 0.5); */
+    padding: 2rem;
     margin: 0 auto;
     color: #000;
+    height: 10vh;
 }
 
 .resume-section h2 {
@@ -76,10 +80,8 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
-    background: linear-gradient(180deg,
-            rgba(78, 67, 118, 1) 20%,
-            rgba(43, 88, 118, 1) 80%);
-    padding-bottom: 3rem;
+    background-color: var(--fourth-color);
+    padding: 2rem 0rem 10rem;
 }
 
 .game-list {
@@ -122,7 +124,11 @@ body {
     transition: 0.10s ease;
 }
 
+/* small screens */
 @media (max-width: 565px) {
+    .landingPage-header {
+        height: 25vh;
+    }
     .landingPage-header h1 {
         font-size: 3.5rem;
         padding: 2rem 0 1rem 0;
