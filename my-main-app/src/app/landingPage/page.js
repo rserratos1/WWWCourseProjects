@@ -40,7 +40,7 @@ export default function LandingPage() {
       </section>
 
       <section className="games-section">
-        <h2>Personal Project</h2>
+        <h2>Personal Projects</h2>
         <div className="game-list">
           <div className="RPS">
             <h3>Rock Paper Scissors</h3>

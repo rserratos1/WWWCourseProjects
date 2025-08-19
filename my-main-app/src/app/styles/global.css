@@ -6,6 +6,7 @@
   --secondary-color: #4e4376;
   --third-color: #C0E0DE;
   --fourth-color: #FFDF64;
+  --fifth-color: #444444;
 
   --body-font: "Josefin Sans", sans-serif;
   --body-font-two: "Playwrite DK Loopet", cursive;
@@ -17,7 +18,9 @@
   
   --background: #2b5876;  /* fallback for old browsers */
   --background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-  --background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --background: linear-gradient(to right, #4e4376, #2b5876);
+  
+  --landing-button-background: linear-gradient(to right, #f8e184, #FFDF64);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body {
@@ -26,8 +29,8 @@ body {
   font-family: var(--body-font);
   margin: 0;
   padding: 0;
-  max-width: 100vw;
-  min-height: 100vh;
+  /* max-width: 100vw;
+  min-height: 100vh; */
   box-sizing: border-box;
 }
 
@@ -50,6 +53,7 @@ main {
   z-index: 1;
   justify-content: flex-start;
   align-items: center;
+  height: 100%;
   /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
